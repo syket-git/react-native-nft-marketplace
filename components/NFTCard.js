@@ -12,7 +12,6 @@ const NFTCard = ({ data }) => {
         backgroundColor: COLORS.white,
         borderRadius: SIZES.font,
         marginBottom: SIZES.extraLarge,
-        margin: SIZES.base,
         ...SHADOWS.dark,
       }}
     >
@@ -48,7 +47,10 @@ const NFTCard = ({ data }) => {
         }}
       >
         <ETHPrice price={data.price} />
-        <RectButton handlePress={() => navigation.navigate('Details', data)} />
+        <RectButton
+          handlePress={() => navigation.navigate('Details', data)}
+          text="Place a bid"
+        />
       </View>
     </View>
   );

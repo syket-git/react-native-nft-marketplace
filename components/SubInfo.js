@@ -3,7 +3,7 @@ import { assets, SIZES, FONTS, SHADOWS, COLORS } from '../constants';
 
 export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
   return (
-    <View style={{ width: '100%' }}>
+    <View style={{ width: '100%', flex: 1 }}>
       <Text
         style={{
           fontFamily: FONTS.semiBold,

@@ -26,7 +26,7 @@ export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   );
 };
 
-export const RectButton = ({ handlePress, ...props }) => {
+export const RectButton = ({ handlePress, text, ...props }) => {
   return (
     <TouchableOpacity
       style={{
@@ -41,7 +41,7 @@ export const RectButton = ({ handlePress, ...props }) => {
       }}
       onPress={handlePress}
     >
-      <Text style={{ color: COLORS.white }}>Details</Text>
+      <Text style={{ color: COLORS.white }}>{text}</Text>
     </TouchableOpacity>
   );
 };
